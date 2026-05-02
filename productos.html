@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productos · El Rancho</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">🥩 El&nbsp;Rancho</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html" class="active">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <button class="nav-cta" onclick="location.href='contacto.html'">Pedir ahora</button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="container">
+      <span class="hero-tag">Catálogo 2025</span>
+      <h1>Nuestros productos</h1>
+      <p>Selección fresca todos los días · Precios desde $8.000 COP</p>
+    </div>
+  </div>
+
+  <!-- FILTROS -->
+  <section class="catalog-section">
+    <div class="container">
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="res">🥩 Res</button>
+        <button class="filter-btn" data-filter="cerdo">🥓 Cerdo</button>
+        <button class="filter-btn" data-filter="pollo">🍗 Pollo</button>
+        <button class="filter-btn" data-filter="abarrotes">🛒 Abarrotes</button>
+      </div>
+
+      <!-- PRODUCTOS GRID -->
+      <div class="products-grid">
+
+        <!-- RES -->
+        <div class="product-card" data-cat="res">
+          <div class="product-img res-bg">🥩</div>
+          <div class="product-info">
+            <span class="product-tag">Res</span>
+            <h3>Lomo de res</h3>
+            <p>Corte premium ideal para asados y bistec. Sin grasa excesiva.</p>
+            <div class="product-footer">
+              <span class="price">$32.000 / kg</span>
+              <a href="contacto.html" class="btn-sm">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="res">
+          <div class="product-img res-bg">🍖</div>
+          <div class="product-info">
+            <span class="product-tag">Res</span>
+            <h3>Costilla de res</h3>
+            <p>Perfecta para sancocho y sudados. Sabor intenso y nutritivo.</p>
+            <div class="product-footer">
+              <span class="price">$18.000 / kg</span>
+              <a href="contacto.html" class="btn-sm">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="res">
+          <div class="product-img res-bg">🥩</div>
+          <div class="product-info">
+            <span class="product-tag">Res</span>
+            <h3>Punta de anca</h3>
+            <p>El corte favorito del parrillero colombiano. Jugoso y tierno.</p>
+            <div class="product-footer">
+              <span class="price">$28.000 / kg</span>
+              <a href="contacto.html" class="btn-sm">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CERDO -->
+        <div class="product-card" data-cat="cerdo">
+          <div class="product-img cerdo-bg">🥓</div>
+          <div class="product-info">
+            <span class="product-tag cerdo">Cerdo</span>
+            <h3>Costilla de cerdo</h3>
+            <p>Costillas carnudas perfectas para BBQ o en salsa de tomate.</p>
+            <div class="product-footer">
+              <span class="price">$16.000 / kg</span>
+              <a href="contacto.html" class="btn-sm">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="cerdo">
+          <div class="product-img cerdo-bg">🥩</div>
+          <div class="product-info">
+            <span class="product-tag cerdo">Cerdo</span>
+            <h3>Lomo de cerdo</h3>
+            <p>Suave y magro. Ideal para medallones a la plancha o al horno.</p>
+            <div class="product-footer">
+              <span class="price">$20.000 / kg</span>
+              <a href="contacto.html" class="btn-sm">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="cerdo">
+          <div class="product-img cerdo-bg">🍖</div>
+          <div class="product-info">
+            <span class="product-tag cerdo">Cerdo</span>
+            <h3>Chicharrón</h3>
+            <p>Crocante y dorado. El acompañante perfecto de la bandeja paisa.</p>
+            <div class="product-footer">
+              <span class="price">$22.000 / kg</span>
+              <a href="contacto.html" class="btn-sm">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- POLLO -->
+        <div class="product-card" data-cat="pollo">
+          <div class="product-img pollo-bg">🍗</div>
+          <div class="product-info">
+            <span class="product-tag pollo">Pollo</span>
+            <h3>Pechuga de pollo</h3>
+            <p>Sin hueso, sin piel. Alta en proteína, baja en grasa.</p>
+            <div class="product-footer">
+              <span class="price">$12.000 / kg</span>
+              <a href="contacto.html" class="btn-sm">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="pollo">
+          <div class="product-img pollo-bg">🍗</div>
+          <div class="product-info">
+            <span class="product-tag pollo">Pollo</span>
+            <h3>Pollo entero</h3>
+            <p>Pollo de engorde fresco. Limpio y listo para cocinar.</p>
+            <div class="product-footer">
+              <span class="price">$10.500 / kg</span>
+              <a href="contacto.html" class="btn-sm">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="pollo">
+          <div class="product-img pollo-bg">🍖</div>
+          <div class="product-info">
+            <span class="product-tag pollo">Pollo</span>
+            <h3>Muslo y pernil</h3>
+            <p>Jugosos y perfectos para hornear, freír o a la brasa.</p>
+            <div class="product-footer">
+              <span class="price">$9.000 / kg</span>
+              <a href="contacto.html" class="btn-sm">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ABARROTES -->
+        <div class="product-card" data-cat="abarrotes">
+          <div class="product-img abarrotes-bg">🫘</div>
+          <div class="product-info">
+            <span class="product-tag abarrotes">Abarrotes</span>
+            <h3>Frijol rojo x 500g</h3>
+            <p>Grano selecto de alta calidad. Ideal para frijolada o sopa.</p>
+            <div class="product-footer">
+              <span class="price">$4.500</span>
+              <a href="contacto.html" class="btn-sm">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="abarrotes">
+          <div class="product-img abarrotes-bg">🌾</div>
+          <div class="product-info">
+            <span class="product-tag abarrotes">Abarrotes</span>
+            <h3>Arroz blanco x 1kg</h3>
+            <p>Arroz de primera calidad, limpio y de cocción perfecta.</p>
+            <div class="product-footer">
+              <span class="price">$5.200</span>
+              <a href="contacto.html" class="btn-sm">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="abarrotes">
+          <div class="product-img abarrotes-bg">🫙</div>
+          <div class="product-info">
+            <span class="product-tag abarrotes">Abarrotes</span>
+            <h3>Aceite vegetal x 1L</h3>
+            <p>Aceite refinado de girasol. Sin colesterol, para freír y cocinar.</p>
+            <div class="product-footer">
+              <span class="price">$8.000</span>
+              <a href="contacto.html" class="btn-sm">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo">🥩 El Rancho</span>
+        <p>Calidad y frescura desde 1995.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <p class="footer-copy">© 2025 Carnes & Abarrotes El Rancho · Bogotá, Colombia</p>
+    </div>
+  </footer>
+
+  <script>
+    const btns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.product-card');
+    btns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const f = btn.dataset.filter;
+        cards.forEach(c => {
+          c.style.display = (f === 'all' || c.dataset.cat === f) ? 'flex' : 'none';
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
